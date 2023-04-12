@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "singularName": "place",
+    "pluralName": "places",
+    "displayName": "Sitz",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "place_number": {
+      "type": "integer",
+      "required": true
+    },
+    "zip": {
+      "type": "integer",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "place_type": {
+      "type": "enumeration",
+      "enum": [
+        "Hauptsitz",
+        "Zweigniederlassung"
+      ]
+    },
+    "companies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::company.company",
+      "mappedBy": "main_branch"
+    },
+    "companies_branches": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::company.company",
+      "mappedBy": "branches"
+    },
+    "test": {
+      "type": "json"
+    }
+  }
+}

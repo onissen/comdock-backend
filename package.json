@@ -1,0 +1,30 @@
+{
+  "name": "dockside-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Backend für die Unternehmensdatenbank Dockside Index. Diese WebApp wurde nur zu Übungszwecken erstellt. Jeglicher Daten-Inhalt ist frei erfunden!",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.9.1",
+    "@strapi/plugin-users-permissions": "4.9.1",
+    "@strapi/plugin-i18n": "4.9.1",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "onissen"
+  },
+  "strapi": {
+    "uuid": "3430114d-578a-42c7-beb6-94a6f579c233"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
