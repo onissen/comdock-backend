@@ -28,27 +28,20 @@
       "type": "string",
       "required": true
     },
-    "place_type": {
-      "type": "enumeration",
-      "enum": [
-        "Hauptsitz",
-        "Zweigniederlassung"
-      ]
+    "address": {
+      "type": "string"
     },
-    "companies": {
+    "mb_companies": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::company.company",
       "mappedBy": "main_branch"
     },
-    "companies_branches": {
+    "br_companies": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::company.company",
       "mappedBy": "branches"
-    },
-    "test": {
-      "type": "json"
     }
   }
 }
