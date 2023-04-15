@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hr_publics",
+  "info": {
+    "singularName": "hr-public",
+    "pluralName": "hr-publics",
+    "displayName": "HR Publikation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pub_title": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "hr_pubs"
+    },
+    "pub_date": {
+      "type": "date",
+      "required": true
+    },
+    "pub_summary": {
+      "type": "string"
+    },
+    "pub_cheader": {
+      "type": "string"
+    },
+    "pub_text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
