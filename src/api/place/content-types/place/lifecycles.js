@@ -1,11 +1,13 @@
-module.exports = {
-    beforeCreate(event) {
-        const {data, where, select, populate} = event.params;
-        event.params.data.address = event.params.data.street + ' ' + event.params.data.place_number + ', ' + event.params.data.zip + event.params.data.city;
-    },
+function formatAddress(data) {
+    const {street, place_number, zip, city} = data;
+    return `${street} ${place_number}, ${zip} ${city}`;
+}
 
-    beforeUpdate(event) {
-        const {data, where, select, populate} = event.params;
-        event.params.data.address = event.params.data.street + ' ' + event.params.data.place_number + ', ' + event.params.data.zip + ' ' + event.params.data.city;
+module.exports = {
+    beforeCreate({params:{data}}) {
+        data.address = formatAddress(data);
+    },
+    beforeUpdate({params:{data}}) {
+        data.address = formatAddress(data);
     },
 };
