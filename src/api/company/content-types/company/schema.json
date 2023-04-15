@@ -49,13 +49,41 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::place.place",
-      "inversedBy": "companies"
+      "inversedBy": "mb_companies"
     },
     "branches": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::place.place",
-      "inversedBy": "companies_branches"
+      "inversedBy": "br_companies"
+    },
+    "corp_object": {
+      "type": "richtext"
+    },
+    "capital": {
+      "type": "decimal"
+    },
+    "represent_rules": {
+      "type": "text"
+    },
+    "company_displaytitle": {
+      "type": "string",
+      "private": true
+    },
+    "legal_form": {
+      "type": "string"
+    },
+    "furtherNames": {
+      "displayName": "Vorherige Namen",
+      "type": "component",
+      "repeatable": false,
+      "component": "companies-further-names.vorherige-namen"
+    },
+    "hr_pubs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hr-public.hr-public",
+      "mappedBy": "company"
     }
   }
 }
