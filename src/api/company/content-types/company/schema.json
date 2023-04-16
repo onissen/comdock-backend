@@ -76,7 +76,7 @@
     "furtherNames": {
       "displayName": "Vorherige Namen",
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "companies-further-names.vorherige-namen"
     },
     "hr_pubs": {
@@ -84,6 +84,17 @@
       "relation": "oneToMany",
       "target": "api::hr-public.hr-public",
       "mappedBy": "company"
+    },
+    "networkCompanies": {
+      "displayName": "Verbundene Unternehmen",
+      "type": "component",
+      "repeatable": true,
+      "component": "network-companies.verbundene-unternehmen"
+    },
+    "network_persons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "network-persons.verbundene-personen"
     }
   }
 }
