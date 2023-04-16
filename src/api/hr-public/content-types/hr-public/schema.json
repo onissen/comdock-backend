@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "pub_title": {
-      "type": "string",
-      "required": true
-    },
     "company": {
       "type": "relation",
       "relation": "manyToOne",
@@ -29,12 +25,16 @@
     "pub_summary": {
       "type": "string"
     },
-    "pub_cheader": {
-      "type": "string"
-    },
     "pub_text": {
       "type": "richtext",
       "required": true
+    },
+    "pub_title": {
+      "type": "string"
+    },
+    "pub_icon": {
+      "type": "string",
+      "required": false
     }
   }
 }
