@@ -1,6 +1,6 @@
 # COMDOCK Index Backend
 
-Comdock Index is a web application that allows you to view simulated **fake** company informations, similar to what you would find in applications such as [NorthData](https://www.northdata.com/) or the German Websites [unternehmensregister.de](https://www.unternehmensregister.de/ureg/?submitaction=language&language=en) and [handelsregister.de](https://www.handelsregister.de/rp_web/welcome.xhtml) for real informations.
+COMDOCK Index is a web application that allows you to view simulated **fake** company informations, similar to what you would find in applications such as [NorthData](https://www.northdata.com/) or the German Websites [unternehmensregister.de](https://www.unternehmensregister.de/ureg/?submitaction=language&language=en) and [handelsregister.de](https://www.handelsregister.de/rp_web/welcome.xhtml) for real informations.
 
 The backend of COMDOCK Index is developed using Strapi and can be found in this repository. You can find the frontend's Repo at [comdock-frontend](https://github.com/onissen/comdock-frontend).
 
