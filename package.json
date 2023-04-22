@@ -1,8 +1,8 @@
 {
-  "name": "dockside-backend",
+  "name": "comdock-backend",
   "private": true,
   "version": "0.1.0",
-  "description": "Backend für die Unternehmensdatenbank Dockside Index. Diese WebApp wurde nur zu Übungszwecken erstellt. Jeglicher Daten-Inhalt ist frei erfunden!",
+  "description": "Backend für die Unternehmensdatenbank COMDOCK Index. Diese WebApp wurde nur zu Übungszwecken erstellt. Jeglicher Daten-Inhalt ist frei erfunden!",
   "scripts": {
     "dev": "strapi develop",
     "start": "strapi start",
@@ -10,11 +10,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.9.1",
-    "@strapi/plugin-users-permissions": "4.9.1",
-    "@strapi/strapi": "4.9.1",
-    "better-sqlite3": "7.4.6",
-    "slugify": "^1.6.6"
+    "@strapi/plugin-i18n": "4.9.2",
+    "@strapi/plugin-users-permissions": "4.9.2",
+    "@strapi/strapi": "4.9.2",
+    "better-sqlite3": "7.4.6"
   },
   "author": {
     "name": "onissen"
