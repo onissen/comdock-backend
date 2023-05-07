@@ -33,8 +33,19 @@
       "type": "string"
     },
     "pub_icon": {
-      "type": "string",
-      "required": false
+      "type": "enumeration",
+      "enum": [
+        "faEllipsis",
+        "faGraduationCap",
+        "faUser",
+        "faCirclePlus",
+        "faBuilding",
+        "faFile",
+        "faCircleMinus",
+        "faCodeBranch"
+      ],
+      "required": true,
+      "default": "faEllipsis"
     }
   }
 }
