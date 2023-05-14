@@ -47,6 +47,10 @@
       ],
       "required": true,
       "default": "faEllipsis"
+    },
+    "dropdownLabel": {
+      "type": "string",
+      "required": false
     }
   }
 }
