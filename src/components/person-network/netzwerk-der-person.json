@@ -20,7 +20,14 @@
     "connection_type": {
       "type": "enumeration",
       "enum": [
-        "Relational TODO"
+        "Geschäftsführer",
+        "Gesellschafter",
+        "CEO",
+        "COO",
+        "Einzelprokura",
+        "Gesamtprokura",
+        "Filialprokura",
+        "Andere Vertretungsbefugnis"
       ]
     },
     "hr_public": {
