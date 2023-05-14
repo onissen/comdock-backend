@@ -13,4 +13,5 @@ module.exports = {
     beforeUpdate({params:{data}}) {
         data.company_displaytitle = formatTitle(data);
     },
+    
 };

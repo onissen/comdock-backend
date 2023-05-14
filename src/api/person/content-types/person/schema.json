@@ -29,6 +29,12 @@
     },
     "full_name": {
       "type": "string"
+    },
+    "personNetwork": {
+      "displayName": "Netzwerk der Person",
+      "type": "component",
+      "repeatable": true,
+      "component": "person-network.netzwerk-der-person"
     }
   }
 }

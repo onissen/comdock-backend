@@ -40,7 +40,8 @@
       "unique": true
     },
     "hr_court": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "lei": {
       "type": "string"
@@ -91,7 +92,7 @@
       "repeatable": true,
       "component": "network-companies.verbundene-unternehmen"
     },
-    "network_persons": {
+    "networkPersons": {
       "type": "component",
       "repeatable": true,
       "component": "network-persons.verbundene-personen"

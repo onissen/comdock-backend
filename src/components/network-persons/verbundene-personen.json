@@ -1,7 +1,8 @@
 {
   "collectionName": "components_network_persons_verbundene_personens",
   "info": {
-    "displayName": "Verbundene Personen"
+    "displayName": "Verbundene Personen",
+    "description": ""
   },
   "options": {},
   "attributes": {

@@ -30,9 +30,25 @@
       "required": true
     },
     "pub_title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "pub_icon": {
+      "type": "enumeration",
+      "enum": [
+        "faEllipsis",
+        "faGraduationCap",
+        "faUser",
+        "faCirclePlus",
+        "faBuilding",
+        "faFile",
+        "faCircleMinus",
+        "faCodeBranch"
+      ],
+      "required": true,
+      "default": "faEllipsis"
+    },
+    "dropdownLabel": {
       "type": "string",
       "required": false
     }
