@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_person_network_netzwerk_der_people",
+  "info": {
+    "displayName": "Netzwerk der Person",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firma": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "since": {
+      "type": "date"
+    },
+    "upto": {
+      "type": "date"
+    },
+    "connection_type": {
+      "type": "enumeration",
+      "enum": [
+        "Relational TODO"
+      ]
+    },
+    "hr_public": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hr-public.hr-public"
+    }
+  }
+}
