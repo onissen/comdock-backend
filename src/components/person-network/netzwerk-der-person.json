@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "firma": {
+    "company": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::company.company"
