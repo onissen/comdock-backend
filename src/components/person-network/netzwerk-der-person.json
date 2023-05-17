@@ -12,7 +12,8 @@
       "target": "api::company.company"
     },
     "since": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "upto": {
       "type": "date"
