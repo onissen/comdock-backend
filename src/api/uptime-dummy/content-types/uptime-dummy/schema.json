@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "uptime_dummies",
+  "info": {
+    "singularName": "uptime-dummy",
+    "pluralName": "uptime-dummies",
+    "displayName": "UptimeDummy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
