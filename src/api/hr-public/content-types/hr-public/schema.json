@@ -51,6 +51,11 @@
     "dropdownLabel": {
       "type": "string",
       "required": false
+    },
+    "cert_document": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cert-document.cert-document"
     }
   }
 }

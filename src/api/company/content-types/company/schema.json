@@ -100,6 +100,12 @@
     "pageslug": {
       "type": "string",
       "required": false
+    },
+    "otherDocs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cert-document.cert-document",
+      "mappedBy": "companyOtherDocs"
     }
   }
 }

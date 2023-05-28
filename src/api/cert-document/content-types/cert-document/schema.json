@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cert_documents",
+  "info": {
+    "singularName": "cert-document",
+    "pluralName": "cert-documents",
+    "displayName": "Zertifizierungen Dokumente",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "document": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "signed_date": {
+      "type": "date"
+    },
+    "certificate": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "companyOtherDocs": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "otherDocs"
+    },
+    "docType": {
+      "type": "enumeration",
+      "enum": [
+        "Gesellschaftsvertrag",
+        "Liste der Gesellschafter",
+        "Jahresabschluss / Bilanz",
+        "Eintragungsanzeige",
+        "Weitere Unterlagen"
+      ]
+    }
+  }
+}
