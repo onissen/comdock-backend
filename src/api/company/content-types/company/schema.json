@@ -101,11 +101,11 @@
       "type": "string",
       "required": false
     },
-    "otherDocs": {
+    "docs": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::cert-document.cert-document",
-      "mappedBy": "companyOtherDocs"
+      "mappedBy": "companyDocs"
     }
   }
 }

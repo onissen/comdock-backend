@@ -38,12 +38,6 @@
         "files"
       ]
     },
-    "companyOtherDocs": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::company.company",
-      "inversedBy": "otherDocs"
-    },
     "docType": {
       "type": "enumeration",
       "enum": [
@@ -59,6 +53,12 @@
       "relation": "manyToOne",
       "target": "api::hr-public.hr-public",
       "inversedBy": "cert_documents"
+    },
+    "companyDocs": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "docs"
     }
   }
 }
