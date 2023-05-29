@@ -53,6 +53,12 @@
         "Eintragungsanzeige",
         "Weitere Unterlagen"
       ]
+    },
+    "hr_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hr-public.hr-public",
+      "inversedBy": "cert_documents"
     }
   }
 }

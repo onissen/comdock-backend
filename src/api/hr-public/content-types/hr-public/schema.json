@@ -52,10 +52,11 @@
       "type": "string",
       "required": false
     },
-    "cert_document": {
+    "cert_documents": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::cert-document.cert-document"
+      "relation": "oneToMany",
+      "target": "api::cert-document.cert-document",
+      "mappedBy": "hr_id"
     }
   }
 }
