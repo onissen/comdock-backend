@@ -52,7 +52,7 @@
       "type": "string",
       "required": false
     },
-    "cert_documents": {
+    "docs": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::cert-document.cert-document",

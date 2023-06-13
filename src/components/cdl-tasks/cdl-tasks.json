@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_cdl_tasks_cdl_tasks",
+  "info": {
+    "displayName": "CDL Tasks"
+  },
+  "options": {},
+  "attributes": {
+    "signer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "certifcate_doc": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "signed_date": {
+      "type": "date"
+    }
+  }
+}

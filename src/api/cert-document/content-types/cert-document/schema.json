@@ -21,23 +21,6 @@
         "images"
       ]
     },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
-    "signed_date": {
-      "type": "date"
-    },
-    "certificate": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
-    },
     "docType": {
       "type": "enumeration",
       "enum": [
@@ -48,17 +31,23 @@
         "Weitere Unterlagen"
       ]
     },
-    "hr_id": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::hr-public.hr-public",
-      "inversedBy": "cert_documents"
-    },
     "companyDocs": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::company.company",
       "inversedBy": "docs"
+    },
+    "hr_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hr-public.hr-public",
+      "inversedBy": "docs"
+    },
+    "cdl_tasks": {
+      "displayName": "CDL Tasks",
+      "type": "component",
+      "repeatable": true,
+      "component": "cdl-tasks.cdl-tasks"
     }
   }
 }
