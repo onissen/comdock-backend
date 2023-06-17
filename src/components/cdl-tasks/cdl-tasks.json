@@ -22,6 +22,15 @@
     },
     "signed_date": {
       "type": "date"
+    },
+    "task": {
+      "type": "enumeration",
+      "enum": [
+        "Beglaubigung mit Dokument",
+        "Beglaubigung ohne Dokument",
+        "Unterschrift mit Dokument",
+        "Unterschrift ohne Dokument"
+      ]
     }
   }
 }
