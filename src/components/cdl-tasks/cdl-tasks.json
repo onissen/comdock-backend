@@ -26,10 +26,10 @@
     "task": {
       "type": "enumeration",
       "enum": [
-        "Beglaubigung mit Dokument",
-        "Beglaubigung ohne Dokument",
-        "Unterschrift mit Dokument",
-        "Unterschrift ohne Dokument"
+        "Digitale Beglaubigung mit Dokument",
+        "Digitale Beglaubigung ohne Dokument",
+        "Digitale Unterschrift mit Dokument",
+        "Digitale Unterschrift ohne Dokument"
       ]
     }
   }
