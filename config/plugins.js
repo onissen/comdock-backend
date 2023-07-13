@@ -9,5 +9,11 @@ module.exports = {
           }
         }
       }
+    },
+    upload: {
+      config: {
+        provider: 'local',
+        sizeLimit: 200000,
+      },
     }
 };

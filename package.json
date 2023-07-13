@@ -12,6 +12,7 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.11.2",
     "@strapi/plugin-users-permissions": "4.11.2",
+    "@strapi/provider-upload-local": "^4.11.5",
     "@strapi/strapi": "4.11.2",
     "better-sqlite3": "7.4.6",
     "koa-cors": "^0.0.16",
